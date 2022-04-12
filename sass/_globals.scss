@@ -1,0 +1,72 @@
+//display
+.flex {
+  display: flex;
+
+  &-jcc {
+    justify-content: center;
+  }
+
+  &-aic {
+    align-items: center;
+  }
+
+  &-jsb {
+    justify-content: space-between;
+  }
+}
+
+.grid {
+  display: grid;
+
+  &-jcc {
+    justify-content: center;
+  }
+
+  &-aic {
+    align-items: center;
+  }
+}
+
+//color
+.white {
+  color: $hoq-white;
+}
+
+.lbrown {
+  color: $hoq-lbrown;
+}
+
+.bold {
+  font-weight: 900;
+  font-size: larger;
+}
+
+//links
+a {
+  &.link {
+    &:hover {
+      color: $hoq-lbrown;
+    }
+  }
+
+  &.btn {
+    border: 1px solid $hoq-white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: 900;
+    transition: background-color 5s ease;
+
+    &:hover {
+      background-color: $hoq-brown;
+    }
+  }
+}
+
+//font
+.clicker {
+  font-family: $clicker;
+}
+
+.montserrat {
+  font-family: $montserrat;
+}
