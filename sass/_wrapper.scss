@@ -1,23 +1,8 @@
 .wrapper {
-  height: 100vh;
+  height: 100%;
   width: 100%;
 
   &-inner {
     height: inherit;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "header"
-      "footer";
-
-    .header {
-      grid-area: header;
-      z-index: 3;
-    }
-
-    .footer {
-      grid-area: footer;
-      z-index: 3;
-    }
   }
 }

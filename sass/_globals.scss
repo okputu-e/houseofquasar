@@ -52,21 +52,42 @@ a {
   &.btn {
     border: 1px solid $hoq-white;
     padding: 0.5rem;
-    border-radius: 0.5rem;
+    border-radius: 2.5rem;
     font-weight: 900;
     transition: background-color 5s ease;
+    background-color: $hoq-lbrown;
+    color: $hoq-black;
+  }
 
-    &:hover {
-      background-color: $hoq-brown;
-    }
+  img {
+    width: 2.5rem;
+    height: 2.5rem;
   }
 }
 
 //font
-.clicker {
-  font-family: $clicker;
+.lemonada {
+  font-family: $lemonada;
 }
 
-.montserrat {
-  font-family: $montserrat;
+.inter {
+  font-family: $inter;
+}
+
+//font size medium
+.md-b-font {
+  font-size: 1rem;
+
+  @include up(medium) {
+    font-size: 1.5rem;
+  }
+}
+
+.l-font {
+  @include up(medium) {
+    font-size: 2.7rem;
+  }
+  @include up(large) {
+    font-size: 4rem;
+  }
 }
