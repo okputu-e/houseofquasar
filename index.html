@@ -6,9 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="client/css/style.css" />
     <link rel="shortcut icon" href="HQ_logo_white.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/bdc4baf551.js"
+      crossorigin="anonymous"
+    ></script>
     <title>House of Quasar | Home</title>
   </head>
-  <body>
+  <body onload="preLoad()">
+    <!--Preload start here-->
+    <div class="loader flex flex-jcc flex-aic">
+      <div class="loading">
+        <img src="client/images/HQ_logo_white.png" alt="" />
+      </div>
+    </div>
     <!-- Wrapper Start -->
     <div class="wrapper">
       <div class="wrapper-inner">
@@ -17,12 +27,35 @@
           <!--Nav  Start-->
           <nav class="nav flex flex-jsb flex-aic">
             <div class="nav-logo">
-              <img src="client/images/HQ_Logo_wbr.png" alt="" class="image" />
+              <img
+                src="client/images/HQ_Logo_wbr.png"
+                alt=""
+                class="image"
+                id="darkImg"
+              />
             </div>
             <div class="nav-item">
-              <a href="" class="signInUp link">Contact Us</a>
+              <div class="links flex flex-aic">
+                <div class="links-theme">
+                  <a id="darkBtn" onclick="setDarkMode(true)" class="theme">
+                    <i class="fas fa-sun"></i>
+                  </a>
+
+                  <a
+                    id="lightBtn"
+                    class="hidden theme"
+                    onclick="setDarkMode(false)"
+                  >
+                    <i class="fas fa-moon"></i>
+                  </a>
+                </div>
+                <div class="links-contact">
+                  <a href="" class="contact">Contact Us</a>
+                </div>
+              </div>
             </div>
           </nav>
+
           <!-- Nav End -->
 
           <!-- Main start -->
@@ -89,14 +122,126 @@
           <!-- Main end -->
         </header>
         <!-- header End -->
-        <footer class="footer flex flex-aic flex-jcc">
-          <div class="copyright">
-            <p>&copy; House of Quasar 2022. All rights reserved</p>
+        <!--
+        <br /> -->
+        <footer class="footer flex flex-jcc">
+          <div class="footer-inner">
+            <div class="links">
+              <div class="useful-links">
+                <h4>Useful Links</h4>
+                <ul>
+                  <li class="footer-links">
+                    <a href=""> Customer services</a>
+                  </li>
+                  <li class="footer-links">
+                    <a href="">About us</a>
+                  </li>
+                  <li class="footer-links">
+                    <a href=""> How to shop on House of Quasar</a>
+                  </li>
+                  <li class="footer-links">
+                    <a href=""> Return & Privacy Policy </a>
+                  </li>
+                  <li class="footer-links">
+                    <a href=""> Terms and Conditions </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="services">
+                <h4>Our Services</h4>
+                <ul>
+                  <li class="footer-links">
+                    <a href="">Branding & Production</a>
+                  </li>
+                  <li class="footer-links">
+                    <a href="">Become an Affiliate</a>
+                  </li>
+                  <li class="footer-links">
+                    <a href="">Request Personal Stylist</a>
+                  </li>
+                  <li class="footer-links">
+                    <a href="">Earn with us</a>
+                  </li>
+                  <li class="footer-links">
+                    <a href="">Bulk Purchase & Order</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="contact">
+                <h4>Contact us</h4>
+                <ul>
+                  <li class="footer-links">
+                    <a href="tel:+2348083179930">08083179930</a>
+                  </li>
+                  <li class="footer-links">
+                    <a href="mailto:House of Quasar@outlook.com">
+                      House of Quasar@outlook.com</a
+                    >
+                  </li>
+                  <li class="footer-links"><address>Lagos,Nigeria</address></li>
+                </ul>
+              </div>
+            </div>
+            <div class="icons">
+              <div class="social-icons">
+                <a href="#">
+                  <i class="fab fa-instagram fa-lg"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-facebook-f fa-lg"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-twitter fa-lg"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-whatsapp fa-lg"></i>
+                </a>
+              </div>
+              <div class="payment-icons">
+                <a href="#">
+                  <img
+                    src="client/images/icons8-visa-64.png"
+                    alt=""
+                    style="width: 100%"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="client/images/icons8-mastercard-64.png"
+                    alt=""
+                    style="width: 100%"
+                  />
+                </a>
+
+                <a href="#">
+                  <img
+                    src="client/images/positivessl_trust_seal_sm_124x32.png"
+                    alt=""
+                    style="width: 100%"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="footer-logo flex flex-jcc">
+              <img
+                src="client/images/HQ_Logo_wbr.png"
+                alt=""
+                class="image"
+                id="darkImg-f"
+              />
+            </div>
+            <hr />
+            <div class="copyright flex flex-jcc">
+              <p>&copy; House of Quasar 2022. All rights reserved</p>
+            </div>
           </div>
         </footer>
       </div>
     </div>
+
     <!-- Wrapper End -->
+    <script src="/client/js/preload.js"></script>
+    <script src="client/js/main.js"></script>
     <script src="client/js/slides.js"></script>
   </body>
 </html>

@@ -1,8 +1,81 @@
 footer {
+  margin: 0.5rem 0;
+
+  .footer-inner {
+    @include up(medium) {
+      width: 95%;
+      margin: 0 auto;
+    }
+    @include down(medium) {
+      padding: 0 1rem;
+    }
+
+    .links {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: center;
+      text-align: center;
+
+      @include down(medium) {
+        grid-template-columns: 1fr;
+      }
+      > div {
+        margin: 2rem 0 0;
+
+        ul {
+          li {
+            margin: 0.5rem 0;
+          }
+        }
+      }
+    }
+
+    .icons {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .social,
+      .payment {
+        &-icons {
+          margin: 2rem 0;
+
+          > a {
+            margin: 0.5rem;
+          }
+        }
+      }
+
+      @include down(medium) {
+        text-align: center;
+        flex-direction: column;
+      }
+    }
+
+    @include down(medium) {
+      padding: 0 2rem;
+    }
+  }
+
+  .footer-logo {
+    img {
+      width: 3.5rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  h4 {
+    font-family: $inter;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 0.5rem;
+  }
+
   div.copyright {
+    text-align: center;
     p {
       font-size: 0.75rem;
-      color: $hoq-dbrown;
     }
   }
 }

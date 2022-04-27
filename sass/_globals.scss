@@ -44,6 +44,7 @@
 //links
 a {
   &.link {
+    color: $hoq-white;
     &:hover {
       color: $hoq-lbrown;
     }
@@ -54,9 +55,9 @@ a {
     padding: 0.5rem;
     border-radius: 2.5rem;
     font-weight: 900;
-    transition: background-color 5s ease;
-    background-color: $hoq-lbrown;
-    color: $hoq-black;
+    // transition: background-color 5s ease;
+    background-color: $hoq-brown;
+    color: $hoq-white;
   }
 
   img {
@@ -90,4 +91,12 @@ a {
   @include up(large) {
     font-size: 4rem;
   }
+}
+
+.hidden {
+  display: none;
+}
+
+.links-theme {
+  margin-right: 2rem;
 }
