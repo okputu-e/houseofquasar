@@ -1,9 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Jura:wght@700&family=Lemonada:wght@300&display=swap");
-@import "variables";
-@import "mixins";
+
+@import "mixin";
 @import "animation";
-@import "reset";
+@import "fonts";
+@import "resets";
 @import "globals";
+@import "helpers";
 @import "wrapper";
+@import "preloader";
 @import "header";
+@import "nav";
+@import "section";
 @import "footer";

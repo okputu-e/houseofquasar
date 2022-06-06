@@ -1,81 +1,103 @@
-footer {
-  margin: 0.5rem 0;
+.footer {
+  padding: 1rem 2rem 0;
+  background-color: var(--hoq-dbrown);
 
-  .footer-inner {
-    @include up(medium) {
-      width: 95%;
+  @include down(medium) {
+    padding: 0 1rem;
+  }
+
+  &-links {
+    display: flex;
+    justify-content: space-around;
+
+    @include down(large) {
+      width: 80%;
       margin: 0 auto;
-    }
-    @include down(medium) {
-      padding: 0 1rem;
-    }
-
-    .links {
       display: grid;
-      grid-gap: 10px;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: 1fr 1fr;
       justify-content: center;
-      text-align: center;
-
-      @include down(medium) {
-        grid-template-columns: 1fr;
-      }
-      > div {
-        margin: 2rem 0 0;
-
-        ul {
-          li {
-            margin: 0.5rem 0;
-          }
-        }
-      }
-    }
-
-    .icons {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-
-      .social,
-      .payment {
-        &-icons {
-          margin: 2rem 0;
-
-          > a {
-            margin: 0.5rem;
-          }
-        }
-      }
-
-      @include down(medium) {
-        text-align: center;
-        flex-direction: column;
-      }
     }
 
     @include down(medium) {
-      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+
+    > div {
+      margin: 1rem 0;
+
+      h4 {
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        margin: 0.5rem 0;
+        color: var(--hoq-brown);
+      }
+
+      ul {
+        li {
+          margin: 0.3rem 0;
+        }
+      }
     }
   }
 
-  .footer-logo {
-    img {
-      width: 3.5rem;
-      margin-bottom: 0.5rem;
+  &-icons {
+    display: flex;
+    justify-content: space-around;
+
+    @include down(medium) {
+      flex-direction: column;
+    }
+
+    .social,
+    .payment {
+      &-icons {
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0 1rem;
+
+        > a {
+          display: block;
+          margin: 0.5rem;
+
+          > i {
+            width: 2rem;
+            height: 2rem;
+          }
+
+          > img {
+            width: 100%;
+            height: 2rem;
+            object-fit: contain;
+          }
+        }
+      }
     }
   }
 
-  h4 {
-    font-family: $inter;
-    text-transform: uppercase;
-    font-weight: bolder;
-    margin-bottom: 0.5rem;
+  &-logo {
+    width: 4rem;
+    margin: 1rem auto;
   }
 
-  div.copyright {
+  hr {
+    border-top: 0.01rem solid var(--hoq-white);
+    width: 20%;
+    margin: 0 auto;
+  }
+
+  &-copyright {
     text-align: center;
+    font-size: 0.7rem;
+    margin: 0.5rem 0;
+
     p {
-      font-size: 0.75rem;
+      color: var(--hoq-brown);
+    }
+
+    @include down(medium) {
+      font-size: 0.6rem;
     }
   }
 }

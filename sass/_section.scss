@@ -1,0 +1,251 @@
+.home {
+  width: 90%;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 4rem;
+
+  @include down(medium) {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+
+  &-text {
+    border-radius: 1.5rem;
+    position: relative;
+
+    color: var(--hoq-white);
+
+    .slide {
+      height: 100%;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+        object-position: 80% 100%;
+        border-radius: 1.5rem;
+        filter: brightness(50%);
+      }
+
+      div.content {
+        position: absolute;
+        top: 30%;
+        left: 3%;
+        z-index: 4;
+      }
+    }
+
+    h1 {
+      margin: 0.8rem 0;
+    }
+  }
+
+  &-links {
+    width: 100%;
+    a {
+      margin: 2rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: var(--hoq-dbrown);
+      padding: 1rem 0.5rem;
+      border-radius: 2.5rem;
+      font-weight: 900;
+
+      span {
+        margin: 0 0.75rem;
+
+        img {
+          background-color: rgba(225, 225, 225, 0.9);
+          border-radius: 2rem;
+          padding: 0.5rem;
+        }
+      }
+    }
+
+    @include down(medium) {
+      width: 80%;
+    }
+  }
+}
+
+.content {
+  padding: 0 2rem;
+  margin: 2rem 0 4rem;
+}
+
+.male {
+  width: 95%;
+  margin: 0 auto;
+
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      color: var(--hoq-dbrown);
+      @include up(large) {
+        display: none;
+      }
+    }
+  }
+
+  hr {
+    border-top: 1px solid var(--hoq-mbrown);
+  }
+
+  .shop {
+    margin: 0 0 2rem;
+
+    @include up(medium) {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+
+    &-categories {
+      display: none;
+
+      li {
+        padding: 1rem 0;
+        border-bottom: 1px solid var(--hoq-mbrown);
+        width: 60%;
+
+        @include up(large) {
+          display: block;
+        }
+      }
+
+      @include up(medium) {
+        display: block;
+      }
+    }
+
+    &-btn {
+      display: none;
+    }
+
+    &-icon {
+      position: relative;
+      padding: 26px 10px;
+      cursor: pointer;
+
+      .shop-line {
+        display: block;
+        position: relative;
+        background: var(--hoq-dbrown);
+        height: 4px;
+        width: 20px;
+        border-radius: 4px;
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          border-radius: 4px;
+          background: var(--hoq-dbrown);
+          transition: background 0.8s ease;
+        }
+
+        &::before {
+          transform: translateY(-0.5rem);
+        }
+
+        &::after {
+          transform: translateY(0.5rem);
+        }
+      }
+
+      @include up(medium) {
+        display: none;
+      }
+    }
+
+    &-items {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 1rem;
+      @include up(medium) {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      .shop-item {
+        margin: 1rem 0;
+
+        .add_to_bag {
+          a.btn-bag {
+            border: 1px solid var(--hoq-white);
+            padding: 0.5rem;
+            width: 100%;
+            font-weight: 900;
+            background-color: var(--hoq-dbrown);
+            color: var(--hoq-white);
+            margin: 0.5rem 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.contact {
+  &-items {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+
+    @include down(medium) {
+      grid-template-columns: 1fr;
+    }
+
+    .form {
+      width: 100%;
+
+      .form-item {
+        width: 100%;
+        margin: 0.8rem 0;
+
+        input {
+          margin-top: 0.5rem;
+        }
+
+        input,
+        textarea {
+          width: 100%;
+          padding: 0.8rem 1rem;
+          outline: none;
+        }
+      }
+    }
+
+    .map {
+      width: 100%;
+
+      .mapouter {
+        position: relative;
+        text-align: right;
+        height: 25rem;
+        width: 100%;
+        padding: 2rem 0 0 0;
+
+        .gmap_canvas {
+          overflow: hidden;
+          background: none !important;
+          height: 100%;
+          width: 100%;
+
+          iframe {
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

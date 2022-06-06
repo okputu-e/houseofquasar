@@ -10,7 +10,6 @@ function setDarkMode(isDark) {
   if (isDark) {
     lightBtn.style.display = "block";
     darkBtn.style.display = "none";
-
     localStorage.setItem("preferredTheme", "dark");
   } else {
     lightBtn.style.display = "none";

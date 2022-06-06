@@ -1,102 +1,11 @@
-//display
-.flex {
-  display: flex;
+/*All general styles*/
 
-  &-jcc {
-    justify-content: center;
-  }
-
-  &-aic {
-    align-items: center;
-  }
-
-  &-jsb {
-    justify-content: space-between;
-  }
-}
-
-.grid {
-  display: grid;
-
-  &-jcc {
-    justify-content: center;
-  }
-
-  &-aic {
-    align-items: center;
-  }
-}
-
-//color
-.white {
-  color: $hoq-white;
-}
-
-.lbrown {
-  color: $hoq-lbrown;
-}
-
-.bold {
-  font-weight: 900;
-  font-size: larger;
-}
-
-//links
-a {
-  &.link {
-    color: $hoq-white;
-    &:hover {
-      color: $hoq-lbrown;
-    }
-  }
-
-  &.btn {
-    border: 1px solid $hoq-white;
-    padding: 0.5rem;
-    border-radius: 2.5rem;
-    font-weight: 900;
-    // transition: background-color 5s ease;
-    background-color: $hoq-brown;
-    color: $hoq-white;
-  }
-
-  img {
-    width: 2.5rem;
-    height: 2.5rem;
-  }
-}
-
-//font
-.lemonada {
-  font-family: $lemonada;
-}
-
-.inter {
-  font-family: $inter;
-}
-
-//font size medium
-.md-b-font {
-  font-size: 1rem;
-
-  @include up(medium) {
-    font-size: 1.5rem;
-  }
-}
-
-.l-font {
-  @include up(medium) {
-    font-size: 2.7rem;
-  }
-  @include up(large) {
-    font-size: 4rem;
-  }
-}
-
-.hidden {
-  display: none;
-}
-
-.links-theme {
-  margin-right: 2rem;
+/*colors*/
+:root {
+  --hoq-white: #fff;
+  --hoq-black: #090504;
+  --hoq-dbrown: #2f1506;
+  --hoq-brown: #9e6434;
+  --hoq-mbrown: #967852;
+  --hoq-lbrown: #ddd6ba;
 }

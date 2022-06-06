@@ -31,3 +31,60 @@
     opacity: 1;
   }
 }
+
+//creates transition when opening & closing the harmburger
+@keyframes openTop {
+  0% {
+    transform: translateY(-5) rotate(0deg);
+  }
+  50% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0) rotate(90deg);
+  }
+}
+
+// @keyframes closeTop {
+//   0% {
+//     transform: translateY(-5) rotate(0deg);
+//   }
+//   50% {
+//     transform: translateY(0) rotate(0deg);
+//   }
+//   100% {
+//     transform: translateY(0) rotate(90deg);
+//   }
+// }
+
+//no need for 0% because it doesnot have to collapse
+//no need for translate just rotate
+@keyframes openMid {
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+// @keyframes closeMid {
+//   50% {
+//     transform: rotate(0deg);
+//   }
+//   100% {
+//     transform: rotate(45deg);
+//   }
+// }
+
+@keyframes openBottom {
+  0% {
+    transform: translateY(5) rotate(0deg);
+  }
+  50% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0) rotate(90deg);
+  }
+}

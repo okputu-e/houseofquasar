@@ -1,0 +1,44 @@
+//font
+.lemonada {
+  font-family: $lemonada;
+}
+
+.inter {
+  font-family: $inter;
+}
+
+//font size medium
+.md-b-font {
+  font-size: 1.3rem;
+
+  @include up(medium) {
+    font-size: 1.5rem;
+  }
+}
+
+.l-font {
+  @include up(medium) {
+    font-size: 2.7rem;
+  }
+  @include up(large) {
+    font-size: 4rem;
+  }
+}
+
+//color
+.white {
+  color: var(--hoq-white);
+}
+
+.lbrown {
+  color: var(--hoq-lbrown);
+}
+
+.bold {
+  font-weight: 900;
+  font-size: larger;
+}
+
+.hidden {
+  display: none;
+}
