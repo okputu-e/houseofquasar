@@ -46,14 +46,12 @@
     <!-- wrapper -->
     <div class="wrapper">
         <!-- header cart -->
-        <?php if (TITLE == "Male" && TITLE == "Female") : ?>
-            <header class="header">
-                <a class="cart">
-                    <img src="client/images/store/hoq-bag.png" alt="">
-                    <span class="cart-value">0</span>
-                </a>
-            </header>
-        <?php endif; ?>
+        <header class="header">
+            <a class="cart">
+                <img src="client/images/store/hoq-bag.png" alt="">
+                <span class="cart-value">0</span>
+            </a>
+        </header>
         <!-- nav -->
         <nav class="nav">
             <div class="nav-logo">
@@ -110,7 +108,7 @@
 
                     <section class="all-images">
                         <div class="image-view">
-                            <img src="client/images/store/hoq_fox_full.jpg" alt="">
+                            <img src="client/images/store/hoq_alpha_full.jpg" alt="">
                         </div>
                         <div class="image-view">
                             <img src="client/images/store/hoq_alpha_half.jpg" alt="">
@@ -121,9 +119,36 @@
                     </section>
                 </section>
 
-                <section class="product-details">
+                <section class="product-content">
+                    <div class="details">
+                        <h2 class="product-heading">hoq alpha</h2>
+                    </div>
+                    <div class="price">
+                        <p> Price: <span>₦15,000</span> </p>
+                    </div>
 
+                    <div class="about">
+                        <h2 class="about-heading">About Hoq alpha</h2>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam assumenda quasi rerum, minima error ipsam omnis.
+                        </p>
 
+                        <p>
+                            Provident odio amet rem veniam nulla. Repudiandae aspernatur quasi dolores doloremque mollitia blanditiis quis?
+                        </p>
+                        <ul>
+                            <li>Color: <span>Blue</span> </li>
+                            <li>Available: <span>In stock</span> </li>
+                            <li>Category: <span>Senator</span> </li>
+                            <li>Shipping Area: <span>Nigeria</span> </li>
+                            <li>Shipping Fee: <span>₦2000</span> </li>
+                        </ul>
+                    </div>
+
+                    <div class="payment-info">
+                        <input type="number" name="number" id="number" min="0" value="1">
+                        <button type="button" class="btn">Add to bag</button>
+                    </div>
                 </section>
             </main>
         </section>

@@ -190,6 +190,115 @@
   }
 }
 
+.product {
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  font-family: $inter;
+  grid-template-columns: 1fr 1fr;
+  //grid-template-rows: 50%;
+  grid-gap: 1rem;
+
+  @include down(medium) {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  &-images {
+    width: 100%;
+    padding: 0.5rem;
+
+    > img {
+      margin: 0.5rem 0;
+      object-fit: contain;
+    }
+    .all-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 1rem;
+    }
+  }
+
+  &-content {
+    padding: 0.5rem;
+
+    .details {
+      margin: 0.5rem 0 0;
+      h2 {
+        text-transform: capitalize;
+        font-size: 2rem;
+        color: var(--hoq-brown);
+      }
+    }
+
+    .price {
+      margin: 1rem 0 0;
+      color: var(--hoq-brown);
+      font-weight: bold;
+      span {
+        color: black;
+        font-weight: normal;
+      }
+    }
+
+    .about {
+      margin: 1.5rem 0;
+      h2 {
+        text-transform: capitalize;
+        font-size: 1rem;
+        color: var(--hoq-brown);
+      }
+
+      p {
+        margin: 1rem 0;
+      }
+
+      ul {
+        padding: 1rem 0;
+        li {
+          margin: 0.5rem 0;
+          color: var(--hoq-brown);
+          background: url("/client/images/store/icons8-check-circle-50.png")
+            left center no-repeat;
+          background-size: 18px;
+          padding-left: 1.7rem;
+          font-weight: bold;
+
+          span {
+            color: var(--hoq-dbrown);
+            font-weight: normal;
+          }
+        }
+      }
+    }
+
+    .payment-info {
+      margin: 0.8rem 0;
+
+      input,
+      .btn {
+        border-radius: 25px;
+        text-align: center;
+        padding: 0.45rem 0.8rem;
+        outline: 0;
+        margin: 0 0 0.2rem 0.2rem;
+      }
+
+      input {
+        border: 1px solid var(--hoq-brown);
+        width: 60px;
+        color: var(--hoq-brown);
+      }
+
+      .btn {
+        background-color: var(--hoq-dbrown);
+        color: var(--hoq-white);
+        border: none;
+      }
+    }
+  }
+}
+
 .contact {
   &-items {
     width: 100%;
@@ -243,6 +352,62 @@
           iframe {
             height: 100%;
             width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tutorial {
+  .book-class {
+    .class-info {
+      p {
+        margin-top: 0.5rem;
+      }
+    }
+    .hoq-packages {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 1rem;
+      margin: 1rem 0;
+
+      @include down(medium) {
+        grid-template-columns: 1fr;
+      }
+
+      .package {
+        &-one,
+        &-two,
+        &-three {
+          background-color: var(--hoq-dbrown);
+          color: var(--hoq-white);
+          padding: 1rem;
+          border-radius: 1rem 0;
+          margin: 2rem 0 0;
+
+          h2 {
+            color: var(--hoq-brown);
+          }
+
+          p {
+            margin-top: 1rem;
+          }
+
+          ul {
+            padding: 1.5rem 0 0;
+
+            li {
+              margin: 1rem 0;
+            }
+          }
+
+          a.class-btn {
+            background-color: var(black);
+            border: 1px solid white;
+            margin: 1rem 0 0;
+            padding: 0.5rem;
+            border-radius: 1rem;
           }
         }
       }

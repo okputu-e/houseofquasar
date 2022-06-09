@@ -46,16 +46,7 @@
     <!--Preload End-->
     <!-- wrapper -->
     <div class="wrapper">
-        <!-- header cart -->
-        <?php if (TITLE == "Male" && TITLE == "Female") : ?>
-            <header class="header">
-                <a class="cart">
-                    <img src="client/images/store/hoq-bag.png" alt="">
-                    <span class="cart-value">0</span>
-                </a>
-            </header>
-        <?php endif; ?>
-        <!-- nav -->
+
         <nav class="nav">
             <div class="nav-logo">
                 <a href="/" class="nav-logo-link">
@@ -112,9 +103,66 @@
                     </h1>
                 </section>
                 <hr>
-                <section class="book-classes">
+                <section class="book-class">
+                    <div class="class-info">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum reiciendis veritatis voluptates aliquam temporibus quia, aspernatur molestias quae consequatur facere. Doloribus quos odio non ex nulla excepturi officiis cumque itaque.
+                        </p>
+                    </div>
+                    <div class="hoq-packages">
+
+                        <div class="package-one">
+                            <h2>Hoq masters</h2>
+                            <p>Duration: <span>1 month</span></p>
+                            <ul>
+                                <li>For: <br>
+                                    Veterans in the Fashion business who will like to upgrade their skills
+                                </li>
+
+                                <li>Extra:<br>
+                                    Entrepreneur and branding classes
+                                </li>
+                            </ul>
+                            <a href="" class="class-btn">Book a class</a>
+                        </div>
 
 
+
+                        <div class="package-two">
+                            <h2>HOQ Intermediate </h2>
+                            <p>Duration: <span>3 month</span></p>
+                            <ul>
+                                <li>For: <br>
+                                    People who want to sow in a short period of time and have some idea of fashion design.
+
+                                </li>
+
+                                <li>Extra:<br>
+                                    Entrepreneur and branding classes
+                                </li>
+                            </ul>
+                            <a href="" class="class-btn">Book a class</a>
+                        </div>
+
+
+
+                        <div class="package-three">
+                            <h2>HOQ Rookie </h2>
+                            <p>Duration: <span>6 month</span></p>
+                            <ul>
+                                <li>For: <br>
+                                    People who are total beginners, have the luxury of time and want to start from scratch.
+                                </li>
+
+                                <li>Extra:<br>
+                                    Entrepreneur and branding classes
+                                </li>
+                            </ul>
+                            <a href="" class="class-btn">Book a class</a>
+                        </div>
+
+
+                    </div>
                 </section>
             </main>
         </section>
